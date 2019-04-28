@@ -1,0 +1,417 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130568750-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130568750-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> 配置模擬器 </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div id="main-container">
+    <div id="area-title" style="margin-bottom: 20px">
+      <h2> DungeonMaker 配置模擬器 v3 <button id="btn-camera" class="btn btn-outline-primary"><i class="fas fa-camera"></i></button> </h2>
+    </div>
+
+    <button id="33" class="btn btn-primary btn-dungeon"> 3×3 </button>
+    <button id="34" class="btn btn-primary btn-dungeon"> 3×4 </button>
+    <button id="35" class="btn btn-primary btn-dungeon"> 3×5 </button>
+    <button id="36" class="btn btn-primary btn-dungeon"> 3×6 </button>
+    <button id="43" class="btn btn-success btn-dungeon"> 4×3 </button>
+    <button id="44" class="btn btn-success btn-dungeon"> 4×4 </button>
+    <button id="45" class="btn btn-success btn-dungeon"> 4×5 </button>
+    <button id="46" class="btn btn-success btn-dungeon"> 4×6 </button>
+    <button id="53" class="btn btn-danger btn-dungeon"> 5×3 </button>
+    <button id="54" class="btn btn-danger btn-dungeon"> 5×4 </button>
+    <button id="55" class="btn btn-danger btn-dungeon"> 5×5 </button>
+    <button id="56" class="btn btn-danger btn-dungeon"> 5×6 </button>
+
+    <div id="area-dungeon" class="row">
+<!--         <table id="table-lord" class="align-self-center">
+          <tbody>
+            <tr>
+              <td></td>
+            </tr>
+          </tbody>
+        </table> -->
+
+      <table id="table-monster">
+        <tbody>
+          <tr class="tr-1" style="display: none;">
+            <td class="td-monster td-6" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster td-5" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster td-4" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+          </tr>
+          <tr>
+            <td class="td-monster td-6" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster td-5" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster td-4" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+          </tr>
+          <tr>
+            <td class="td-monster td-6" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster td-5" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster td-4" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+          </tr>
+          <tr>
+            <td class="td-monster td-6" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster td-5" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster td-4" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+          </tr>
+          <tr class="tr-5" style="display: none;">
+            <td class="td-monster td-6" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster td-5" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster td-4" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="area-img" class="col-sm-12" style="margin-top: 20px; margin-left: -15px">
+      <div class="card">
+        <div class="card-header"> 截圖（右鍵保存） </div>
+        <div class="card-body"> <div id="img-out"></div> </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="area-upload" style="margin-bottom: 20px">
+      <h4> 更新日誌 </h4>
+      <li> 2019/04/29　　嘗試完全複製原始碼並發布
+    </div>
+
+    <div id="footer" style="margin: 10px">
+        <a target="_blank" href="https://home.gamer.com.tw/homeindex.php?owner=lag2255128"> 作：銀島（gamer.com） </a>
+    </div>    
+  </div>
+
+
+  <!-- モーダルの設定 -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <ul class="nav nav-tabs pull-right"  id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="default1-tab" data-toggle="tab" href="#default1" role="tab" aria-controls="default1" aria-selected="true"> 初期（戰鬥） </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="default2-tab" data-toggle="tab" href="#default2" role="tab" aria-controls="default2" aria-selected="false"> 初期（陷阱、功能） </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="original-tab" data-toggle="tab" href="#original" role="tab" aria-controls="original" aria-selected="false"> 原版 </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="awakening-tab" data-toggle="tab" href="#awakening" role="tab" aria-controls="awakening" aria-selected="false"> 覺醒 </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="high-grade-tab" data-toggle="tab" href="#high-grade" role="tab" aria-controls="high-grade" aria-selected="false"> 高級 </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="mystery-tab" data-toggle="tab" href="#mystery" role="tab" aria-controls="mystery" aria-selected="false"> 神話 </a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false"> 活動 </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="prison-tab" data-toggle="tab" href="#prison" role="tab" aria-controls="prison" aria-selected="false"> 監獄 </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="alter-tab" data-toggle="tab" href="#alter" role="tab" aria-controls="alter" aria-selected="false"> 祭壇 </a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane active" id="default1" role="tabpanel" aria-labelledby="default1-tab">
+              <table id="default1" class="table-room">
+                <tbody>
+                  <tr class="row">
+                    <td class="col-xs-1"><img src="./img/basic_battle/EArena.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EBattle.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EBarrier.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EIronMaiden.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/ESwordShield.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/ESolitude.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EAmbush.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/ELazy.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EFear.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EFury.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EFrenzy.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EMeditate.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/ESprout.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EBloodAltar.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EExcess.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EDarkness.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/ECemetery.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EAmplify.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EGiant.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EBloodlust.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EHaste.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EDoubleGiant.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EScream.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_battle/EWarHorn.png"></td>
+                    <td class="col-xs-1"><img src="./img/border_dashed.png"></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+
+            <div class="tab-pane" id="default2" role="tabpanel" aria-labelledby="default2-tab">
+              <table id="default2" class="table-room">
+                <tbody>
+                  <tr class="row">
+                    <td class="col-xs-1"><img src="./img/basic_trap/EHole.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EIce.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EArrow.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/ERock.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EGillotin.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/ETwisted.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EVenom.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EIgnite.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EIncinerate.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EHungry.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EReturn.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/ECurse.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EExtract.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EExplode.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EThunder.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EBallista.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/ESkewer.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EMultishot.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EPhosgene.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EPoisonArrow.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EIceBolt.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/ECombustroom.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/ELightning.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EStaticField.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EHatchery.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/ELounge.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EOpertaion.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EResearch.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/ECrossbow.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EExplosiveArrow.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EMagicGear.png"></td>
+                    <td class="col-xs-1"><img src="./img/basic_trap/EMeatWagon.png"></td>
+                    <td class="col-xs-1"><img src="./img/border_dashed.png"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="tab-pane" id="original" role="tabpanel" aria-labelledby="original-tab">
+              <table id="original" class="table-room" style="table-layout: fixed;">
+                <tbody>
+                  <tr class="row">
+                    <td class="col-xs-1"><img src="./img/original/EVamp.png"></td>
+                    <td class="col-xs-1"><img src="./img/original/EBetray.png"></td>
+                    <td class="col-xs-1"><img src="./img/original/ESacrifice.png"></td>
+                    <td class="col-xs-1"><img src="./img/original/ETempt.png"></td>
+                    <td class="col-xs-1"><img src="./img/original/ETripleGiant.png"></td>
+                    <td class="col-xs-1"><img src="./img/original/EGunpowder.png"></td>
+                    <td class="col-xs-1"><img src="./img/original/EBlitz.png"></td>
+                    <td class="col-xs-1"><img src="./img/original/EExploit.png"></td>
+                    <td class="col-xs-1"><img src="./img/original/EElectricLeakage.png"></td>
+                    <td class="col-xs-1"><img src="./img/original/EArrowrain.png"></td>
+                    <td class="col-xs-1"><img src="./img/original/EChainLightning.png"></td>
+                    <td class="col-xs-1"><img src="./img/original/EMeteor.png"></td>
+                    <td class="col-xs-1"><img src="./img/original/ETailwind.png"></td>
+                    <td class="col-xs-1"><img src="./img/border_dashed.png"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="tab-pane" id="awakening" role="tabpanel" aria-labelledby="awakening-tab">
+              <table id="awakening" class="table-room" style="table-layout: fixed;">
+                <tbody>
+                  <tr class="row">
+                    <td class="col-xs-1"><img src="./img/awakening/EGraveyard.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EOverawe.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EHugeRoom.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/ESmashBattle.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/ETreeofLife.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EBloodpool.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EDynamite.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EHealingWind.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EIceHole.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EFireStrike.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EDisease.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EDarkVeil.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EInfect.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EChaosbolt.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EFireStorm.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EFrostStorm.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EPlague.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EHugeMeteor.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/ERainOfChaos.png"></td>
+                    <td class="col-xs-1"><img src="./img/awakening/EFrostwind.png"></td>
+                    <td class="col-xs-1"><img src="./img/border_dashed.png"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="tab-pane" id="high-grade" role="tabpanel" aria-labelledby="high-grade-tab">
+              <table id="high-grade" class="table-room" style="table-layout: fixed;">
+                <tbody>
+                  <tr class="row">
+                    <td class="col-xs-1"><img src="./img/high-grade/ESteelShield.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/EMirror.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/EPrism.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/EIronSpike.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/EIronWall.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/EThornbush.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/EAbsolute.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/EIronCurtain.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/EBlacksmith.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/ESpecialOperation.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/EFoundry.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/ERevenge.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/EFlameBlossom.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/EPoisonousWeed.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/EThunderBlossom.png"></td>
+                    <td class="col-xs-1"><img src="./img/high-grade/EBloodShield.png"></td>
+                    <td class="col-xs-1"><img src="./img/border_dashed.png"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="tab-pane" id="mystery" role="tabpanel" aria-labelledby="mystery-tab">
+                <table id="mystery" class="table-room">
+                  <tbody>
+                    <tr class="row">
+                      <td class="col-xs-1"><img src="./img/mystic/EAncientBell.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EAngerSwirl.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EArrowBomb.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EBigBang.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EBigBomb.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EBloodyMist.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EBrokenMirror.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/ECrator.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/ECurseWave.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EDeathandDecay.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EDeathMist.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EDeathWave.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EElectricalDischarge.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EFlamethrower.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EForkedLightning.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EFrozenMist.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EHellWall.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EIronSkin.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/ELibrary.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/ELightningRod.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EPlagueSpreador.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EPoisonStingRoom.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/ERainbowFlower.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/ESealofRitual.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/ESecretLab.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/ESnowballDisposer.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/ETempleofSilence.png"></td>
+                      <td class="col-xs-1"><img src="./img/mystic/EWhiteFrost.png"></td>
+                      <td class="col-xs-1"><img src="./img/border_dashed.png"></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane" id="event" role="tabpanel" aria-labelledby="event-tab">
+                <table id="event" class="table-room" style="table-layout: fixed;">
+                  <tbody>
+                    <tr class="row">
+                      <td class="col-xs-1"><img src="./img/event/EInfinityClock.png"></td>
+                      <td class="col-xs-1"><img src="./img/event/ESaplingOfYggdrasil.png"></td>
+                      <td class="col-xs-1"><img src="./img/event/ESwampMonster.png"></td>
+                      <td class="col-xs-1"><img src="./img/event/Eyggdrasill.png"></td>
+                      <td class="col-xs-1"><img src="./img/border_dashed.png"></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane" id="prison" role="tabpanel" aria-labelledby="prison-tab">
+              <table id="prison" class="table-room" style="table-layout: fixed;">
+                <tbody>
+                  <tr class="row">
+                    <td class="col-xs-1"><img src="./img/prison/EPrisonBattle1.png"></td>
+                    <td class="col-xs-1"><img src="./img/prison/EPrisonBattle2.png"></td>
+                    <td class="col-xs-1"><img src="./img/prison/EPrisonBattle3.png"></td>
+                    <td class="col-xs-1"><img src="./img/prison/EPrison.png"></td>
+                    <td class="col-xs-1"><img src="./img/prison/EPrisonUpg1.png"></td>
+                    <td class="col-xs-1"><img src="./img/prison/EPrisonUpg2.png"></td>
+                    <td class="col-xs-1"><img src="./img/prison/EPrisonUpg3.png"></td>
+                    <td class="col-xs-1"><img src="./img/prison/EPrisonWork1.png"></td>
+                    <td class="col-xs-1"><img src="./img/prison/EPrisonWork2.png"></td>
+                    <td class="col-xs-1"><img src="./img/prison/EPrisonWork3.png"></td>
+                    <td class="col-xs-1"><img src="./img/prison/EPrisonFear1.png"></td>
+                    <td class="col-xs-1"><img src="./img/prison/EPrisonFear2.png"></td>
+                    <td class="col-xs-1"><img src="./img/prison/EPrisonFear3.png"></td>
+                    <td class="col-xs-1"><img src="./img/border_dashed.png"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="tab-pane" id="alter" role="tabpanel" aria-labelledby="alter-tab">
+              <table id="alter" class="table-room" style="table-layout: fixed;">
+                <tbody>
+                  <tr class="row">
+                    <td class="col-xs-1"><img src="./img/alter/EAltar.png"></td>
+                    <td class="col-xs-1"><img src="./img/alter/EAltarUpg1.png"></td>
+                    <td class="col-xs-1"><img src="./img/alter/EAltarUpg2.png"></td>
+                    <td class="col-xs-1"><img src="./img/alter/EAltarUpg3.png"></td>
+                    <td class="col-xs-1"><img src="./img/border_dashed.png"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+        </div><!-- /.modal-footer -->
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+  <script src="./js/html2canvas.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
