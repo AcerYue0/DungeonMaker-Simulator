@@ -27,20 +27,46 @@
     <div id="area-title" style="margin-bottom: 20px">
       <h2> DungeonMaker 配置模擬器 v3 <button id="btn-camera" class="btn btn-outline-primary"><i class="fas fa-camera"></i></button> </h2>
     </div>
-
-    <button id="33" class="btn btn-primary btn-dungeon"> 3×3 </button>
-    <button id="34" class="btn btn-primary btn-dungeon"> 3×4 </button>
-    <button id="35" class="btn btn-primary btn-dungeon"> 3×5 </button>
-    <button id="36" class="btn btn-primary btn-dungeon"> 3×6 </button>
-    <button id="43" class="btn btn-success btn-dungeon"> 4×3 </button>
-    <button id="44" class="btn btn-success btn-dungeon"> 4×4 </button>
-    <button id="45" class="btn btn-success btn-dungeon"> 4×5 </button>
-    <button id="46" class="btn btn-success btn-dungeon"> 4×6 </button>
-    <button id="53" class="btn btn-danger btn-dungeon"> 5×3 </button>
-    <button id="54" class="btn btn-danger btn-dungeon"> 5×4 </button>
-    <button id="55" class="btn btn-danger btn-dungeon"> 5×5 </button>
-    <button id="56" class="btn btn-danger btn-dungeon"> 5×6 </button>
-
+    
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-primary btn-dungeon">
+        <input type="radio" name="options" id="33" autocomplete="off"> 3x3
+      </label>
+      <label class="btn btn-primary btn-dungeon active">
+        <input type="radio" name="options" id="34" autocomplete="off" checked> 3x4
+      </label>
+      <label class="btn btn-primary btn-dungeon">
+        <input type="radio" name="options" id="35" autocomplete="off"> 3x5
+      </label>
+      <label class="btn btn-primary btn-dungeon">
+        <input type="radio" name="options" id="36" autocomplete="off"> 3x6
+      </label>
+      <label class="btn btn-primary btn-dungeon">
+        <input type="radio" name="options" id="43" autocomplete="off"> 4x3
+      </label>
+      <label class="btn btn-primary btn-dungeon">
+        <input type="radio" name="options" id="44" autocomplete="off"> 4x4
+      </label>
+      <label class="btn btn-primary btn-dungeon">
+        <input type="radio" name="options" id="45" autocomplete="off"> 4x5
+      </label>
+      <label class="btn btn-primary btn-dungeon">
+        <input type="radio" name="options" id="46" autocomplete="off"> 4x6
+      </label>
+      <label class="btn btn-primary btn-dungeon">
+        <input type="radio" name="options" id="53" autocomplete="off"> 5x3
+      </label>
+      <label class="btn btn-primary btn-dungeon">
+        <input type="radio" name="options" id="54" autocomplete="off"> 5x4
+      </label>
+      <label class="btn btn-primary btn-dungeon">
+        <input type="radio" name="options" id="55" autocomplete="off"> 5x5
+      </label>
+      <label class="btn btn-primary btn-dungeon">
+        <input type="radio" name="options" id="56" autocomplete="off"> 5x6
+      </label>
+    </div>
+    
     <div id="area-dungeon" class="row">
 <!--         <table id="table-lord" class="align-self-center">
           <tbody>
