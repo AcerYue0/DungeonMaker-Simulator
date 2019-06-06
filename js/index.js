@@ -25,7 +25,7 @@ $('.table-room').on('click', function(tableElem) {
 });
 
 // ダンジョンマスボタン押下時の処理
-$('.btn-dungeon').on('click', function (elem) {
+$('.btn-dungeon').on('toggle', function (elem) {
     const id = elem.target.id;
     operateCells(id/10|0, id%10);
 });
