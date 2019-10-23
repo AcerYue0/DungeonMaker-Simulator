@@ -30,6 +30,37 @@ $('.btn-dungeon').on('click', function (elem) {
     operateCells(id/10|0, id%10);
 });
 
+/*$('.btn-spDungeon').on('click', function (elem){
+    const id = elem.target.id;
+    switch(id){
+        case "Spiderweb":
+            operateCells(5, 5);
+            $('.t-13').attr('src','./img/border_empty');
+            $('.t-53').attr('src','./img/border_empty');
+            $('.t-21').attr('src','./img/border_empty');
+            $('.t-25').attr('src','./img/border_empty');
+            $('.t-41').attr('src','./img/border_empty');
+            $('.t-45').attr('src','./img/border_empty');
+            break;
+        case Jormungand:
+            operateCells(5, 5);
+            break;
+        case Ant:
+            operateCells(5, 5);
+            break;
+        case Box:
+            operateCells(5, 5);
+            break;
+        case Pause:
+            operateCells(5, 5);
+            break;
+        case Exhibition:
+            operateCells(5, 5);
+            break;
+    }
+})
+*/
+
 // カメラボタン押下時の処理
 $('#btn-camera').on('click', function () {
     // $('#table-monster').find('td').each(function(index, elem) {
