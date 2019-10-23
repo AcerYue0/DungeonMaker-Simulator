@@ -58,8 +58,8 @@ $('.btn-dungeon').on('click', function (elem) {
             operateCells(5, 5);
             break;
     }
-})
-*/
+})*/
+
 
 // カメラボタン押下時の処理
 $('#btn-camera').on('click', function () {
