@@ -30,35 +30,41 @@ $('.btn-dungeon').on('click', function (elem) {
     operateCells(id/10|0, id%10);
 });
 
-/*$('.btn-spDungeon').on('click', function (elem){
-    const id = elem.target.id;
+$('.btn-spDungeon').on('click', function (spElem){
+    const id = spElem.target.id;
     switch(id){
         case "Spiderweb":
             operateCells(5, 5);
-            $('.t-13').attr('src','./img/border_empty');
-            $('.t-53').attr('src','./img/border_empty');
-            $('.t-21').attr('src','./img/border_empty');
-            $('.t-25').attr('src','./img/border_empty');
-            $('.t-41').attr('src','./img/border_empty');
-            $('.t-45').attr('src','./img/border_empty');
+            $('.td-Sp').prop('disabled', true);
+            $('.img-Sp').attr('src', './img/border_empty.png');
             break;
-        case Jormungand:
+        case "Jormungand":
             operateCells(5, 5);
+            $('.td-Jo').prop('disabled', true);
+            $('.img-Jo').attr('src', './img/border_empty.png');
             break;
-        case Ant:
+        case "Ant":
             operateCells(5, 5);
+            $('.td-Ant').prop('disabled', true);
+            $('.img-Ant').attr('src', './img/border_empty.png');
             break;
-        case Box:
+        case "Box":
             operateCells(5, 5);
+            $('.td-Box').prop('disabled', true);
+            $('.img-Box').attr('src', './img/border_empty.png');
             break;
-        case Pause:
+        case "Pause":
             operateCells(5, 5);
+            $('.td-Pa').prop('disabled', true);
+            $('.img-Pa').attr('src', './img/border_empty.png');
             break;
-        case Exhibition:
+        case "Exhibition":
             operateCells(5, 5);
+            $('.td-Exh').prop('disabled', true);
+            $('.img-Exh').attr('src', './img/border_empty.png');
             break;
     }
-})*/
+});
 
 
 // カメラボタン押下時の処理
@@ -89,6 +95,8 @@ function modalClose() {
 // ダンジョンマスのサイズを動的に変更
 function operateCells(row, col) {
     // 行方向セルの表示・非表示設定
+    $('.td-monster').prop('disabled', false);
+    $('.img-monster').attr('src', './img/border_dashed.png');
     switch(row) {
         case 3:
             $('.tr-1').hide();

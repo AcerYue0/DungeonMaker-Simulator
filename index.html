@@ -27,6 +27,9 @@
         <button id="btn-camera" class="btn btn-outline-primary"><i class="fas fa-camera"></i></button> 
       </h2>
     </div>
+    <h4>
+      ------一般地宮------
+    </h4>
     <div class="btn-group-vertical">
       <div class="btn-group">
         <button id="33" class="btn btn-primary btn-dungeon"> 3×3 </button>
@@ -48,7 +51,7 @@
       </div>
     </div>
     <h4>
-      ----------敬請期待----------
+      ----------特殊地宮----------
     </h4>
     <div class="btn-group-vertical">
         <div class="btn-group">
@@ -67,9 +70,6 @@
           <button id="55" class="btn btn-danger btn-dungeon"> Into the Abyss </button>
         </div>
       </div>
-      <h4>
-        ----------敬請期待----------
-      </h4>
     <div id="area-dungeon" class="row">
 <!--         <table id="table-lord" class="align-self-center">
           <tbody>
@@ -82,44 +82,44 @@
       <table id="table-monster">
         <tbody>
           <tr class="tr-1" style="display: none;">
-            <td class="td-monster td-6 t-16" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-            <td class="td-monster td-5 t-15" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-            <td class="td-monster td-4 t-14" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-            <td class="td-monster t-13" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
-            <td class="td-monster t-12" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
-            <td class="td-monster t-11" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-16" class="td-monster td-6" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-15" class="td-monster td-5 td-Jo td-Ant" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster img-Jo img-Ant" src="./img/border_dashed.png"></td>
+            <td id="t-14" class="td-monster td-4 td-Jo td-Ant td-Exh" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster img-Jo img-Ant img-Exh" src="./img/border_dashed.png"></td>
+            <td id="t-13" class="td-monster td-Sp td-Jo td-Ant td-Pa td-Exh" data-toggle="modal" data-target="#myModal"><img class="img-monster img-Sp img-Jo img-Ant img-Pa img-Exh" src="./img/border_dashed.png"></td>
+            <td id="t-12" class="td-monster td-Jo td-Exh" data-toggle="modal" data-target="#myModal"><img class="img-monster img-Jo img-Exh" src="./img/border_dashed.png"></td>
+            <td id="t-11" class="td-monster td-Exh" data-toggle="modal" data-target="#myModal"><img class="img-monster img-Exh" src="./img/border_dashed.png"></td>
           </tr>
           <tr>
-              <td class="td-monster td-6 t-26" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster td-5 t-25" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster td-4 t-24" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster t-23" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster t-22" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster t-21" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-26" class="td-monster td-6" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-25" class="td-monster td-5 td-Sp td-Jo td-Ant" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster img-Sp img-Jo img-Ant" src="./img/border_dashed.png"></td>
+            <td id="t-24" class="td-monster td-4 td-Jo" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster img-Jo" src="./img/border_dashed.png"></td>
+            <td id="t-23" class="td-monster td-Pa" data-toggle="modal" data-target="#myModal"><img class="img-monster img-Pa" src="./img/border_dashed.png"></td>
+            <td id="t-22" class="td-monster td-Exh" data-toggle="modal" data-target="#myModal"><img class="img-monster img-Exh" src="./img/border_dashed.png"></td>
+            <td id="t-21" class="td-monster td-Sp td-Ant td-Exh" data-toggle="modal" data-target="#myModal"><img class="img-monster img-Sp img-Ant img-Exh" src="./img/border_dashed.png"></td>
           </tr>
           <tr>
-              <td class="td-monster td-6 t-36" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster td-5 t-35" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster td-4 t-34" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster t-33" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster t-32" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster t-31" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-36" class="td-monster td-6" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-35" class="td-monster td-5" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-34" class="td-monster td-4" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-33" class="td-monster td-Box" data-toggle="modal" data-target="#myModal"><img class="img-monster img-Box" src="./img/border_dashed.png"></td>
+            <td id="t-32" class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-31" class="td-monster" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
           </tr>
           <tr>
-              <td class="td-monster td-6 t-46" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster td-5 t-45" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster td-4 t-44" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster t-43" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster t-42" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster t-41" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-46" class="td-monster td-6" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-45" class="td-monster td-5 td-Sp td-Jo td-Ant" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster img-Sp img-Jo img-Ant" src="./img/border_dashed.png"></td>
+            <td id="t-44" class="td-monster td-4" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-43" class="td-monster td-Pa" data-toggle="modal" data-target="#myModal"><img class="img-monster img-Pa" src="./img/border_dashed.png"></td>
+            <td id="t-42" class="td-monster td-Exh" data-toggle="modal" data-target="#myModal"><img class="img-monster img-Exh" src="./img/border_dashed.png"></td>
+            <td id="t-41" class="td-monster td-Sp td-Ant td-Exh" data-toggle="modal" data-target="#myModal"><img class="img-monster img-Sp img-Ant img-Exh" src="./img/border_dashed.png"></td>
           </tr>
           <tr class="tr-5" style="display: none;">
-              <td class="td-monster td-6 t-56" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster td-5 t-55" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster td-4 t-54" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster t-53" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster t-52" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
-              <td class="td-monster t-51" data-toggle="modal" data-target="#myModal"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-56" class="td-monster td-6" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster" src="./img/border_dashed.png"></td>
+            <td id="t-55" class="td-monster td-5 td-Jo td-Ant" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster img-Jo img-Ant" src="./img/border_dashed.png"></td>
+            <td id="t-54" class="td-monster td-4 td-Jo td-Ant td-Exh" data-toggle="modal" data-target="#myModal" style="display: none;"><img class="img-monster img-Jo img-Ant img-Exh" src="./img/border_dashed.png"></td>
+            <td id="t-53" class="td-monster td-Sp td-Jo td-Ant td-Pa td-Exh" data-toggle="modal" data-target="#myModal"><img class="img-monster img-Sp img-Jo img-Ant img-Pa img-Exh" src="./img/border_dashed.png"></td>
+            <td id="t-52" class="td-monster td-Exh" data-toggle="modal" data-target="#myModal"><img class="img-monster img-Exh" src="./img/border_dashed.png"></td>
+            <td id="t-51" class="td-monster td-Exh" data-toggle="modal" data-target="#myModal"><img class="img-monster img-Exh" src="./img/border_dashed.png"></td>
           </tr>
         </tbody>
       </table>
@@ -138,6 +138,7 @@
     <div id="area-upload" style="margin-bottom: 20px">
       <h4> 更新日誌 </h4>
       <li> 2019/04/29　　嘗試改善原始碼並發布
+      <li> 2019/10/27　　新地宮樣式實裝
     </div>
 
     <div id="footer" style="margin: 10px">
