@@ -1,8 +1,8 @@
 init();
 
-// 初期化処理
+// initialize
 function init() {
-    // 初期配置は3×4にする
+    // starting setting 3x4
     operateCells(3, 4);
 }
 
@@ -24,12 +24,13 @@ $('.table-room').on('click', function(tableElem) {
     }
 });
 
-// ダンジョンマスボタン押下時の処理
+// dungeon tiles
 $('.btn-dungeon').on('click', function (elem) {
     const id = elem.target.id;
     operateCells(id/10|0, id%10);
 });
 
+// specoal dungeon tiles
 $('.btn-spDungeon').on('click', function (spElem){
     const id = spElem.target.id;
     switch(id){
@@ -67,7 +68,7 @@ $('.btn-spDungeon').on('click', function (spElem){
 });
 
 
-// カメラボタン押下時の処理
+// camera
 $('#btn-camera').on('click', function () {
     // $('#table-monster').find('td').each(function(index, elem) {
     //     elem.style.border = 'none';
@@ -92,9 +93,8 @@ function modalClose() {
     $('#myModal').modal('hide');
 }
 
-// ダンジョンマスのサイズを動的に変更
+// dungeon size onChange
 function operateCells(row, col) {
-    // 行方向セルの表示・非表示設定
     $('.td-monster').prop('disabled', false);
     $('.img-monster').attr('src', './img/border_dashed.png');
     switch(row) {
@@ -112,7 +112,6 @@ function operateCells(row, col) {
             break;
     }
 
-    // 列方向セルの表示・非表示設定
     switch(col) {
         case 3:
             $('.td-4').hide();
