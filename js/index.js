@@ -93,9 +93,10 @@ $('#btn-camera').on('click', function () {
     });
 });
 
-$('.clean-card').on('click', function () {
+$('#clean-card').on('click', function () {
     $('#img-out').remove();
 });
+
 
 function modalClose() {
     $('body').removeClass('modal-open');
