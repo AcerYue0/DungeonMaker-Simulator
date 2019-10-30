@@ -6,6 +6,13 @@ function init() {
     operateCells(3, 4);
 }
 
+/*$(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
+
+});*/
+
 let flag;
 let mTdElem;
 $('.td-monster').on('click', function(tdElem) {
@@ -67,7 +74,6 @@ $('.btn-spDungeon').on('click', function (spElem){
     }
 });
 
-
 // camera
 $('#btn-camera').on('click', function () {
     // $('#table-monster').find('td').each(function(index, elem) {
@@ -85,6 +91,10 @@ $('#btn-camera').on('click', function () {
         $('#img-out').append(canvas);
         $('#img-out').append('　　');
     });
+});
+
+$('.clean-card').on('click', function () {
+    $('#img-out').remove();
 });
 
 function modalClose() {
