@@ -6,21 +6,14 @@ function init() {
     operateCells(3, 4);
 }
 
-/*$(document).ready(function () {
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-    });
-
-});*/
-
 let flag;
 let mTdElem;
-$('.td-monster').on('click', function(tdElem) {
+$('.td-monster').on('click', function (tdElem) {
     flag = true;
     mTdElem = tdElem;
 });
 
-$('.table-room').on('click', function(tableElem) {
+$('.table-room').on('click', function (tableElem) {
     if (flag) {
         if (tableElem.target.localName == 'img') {
             mTdElem.target.src = tableElem.target.src;
@@ -34,13 +27,13 @@ $('.table-room').on('click', function(tableElem) {
 // dungeon tiles
 $('.btn-dungeon').on('click', function (elem) {
     const id = elem.target.id;
-    operateCells(id/10|0, id%10);
+    operateCells(id / 10 | 0, id % 10);
 });
 
 // specoal dungeon tiles
-$('.btn-spDungeon').on('click', function (spElem){
+$('.btn-spDungeon').on('click', function (spElem) {
     const id = spElem.target.id;
-    switch(id){
+    switch (id) {
         case "Spiderweb":
             operateCells(5, 5);
             $('.td-Sp').prop('disabled', true);
@@ -108,7 +101,7 @@ function modalClose() {
 function operateCells(row, col) {
     $('.td-monster').prop('disabled', false);
     $('.img-monster').attr('src', './img/border_dashed.png');
-    switch(row) {
+    switch (row) {
         case 3:
             $('.tr-1').hide();
             $('.tr-5').hide();
@@ -123,7 +116,7 @@ function operateCells(row, col) {
             break;
     }
 
-    switch(col) {
+    switch (col) {
         case 3:
             $('.td-4').hide();
             $('.td-5').hide();
