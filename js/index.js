@@ -72,24 +72,17 @@ $('#btn-camera').on('click', function () {
     // $('#table-monster').find('td').each(function(index, elem) {
     //     elem.style.border = 'none';
     // });
-
     html2canvas(document.querySelector("#table-monster")).then(canvas => {
-        // $('#table-monster').find('td').each(function(index, elem) {
-        //     elem.style.border = '1px dashed';
-        // });
+        /*$('#table-monster').find('td').each(function(index, elem) {
+            elem.style.border = '1px dashed';
+        });*/
 
         const ctx = canvas.getContext('2d');
         console.dir(canvas);
-
         $('#img-out').append(canvas);
         $('#img-out').append('　　');
     });
 });
-
-$('#clean-card').on('click', function () {
-    $('#img-out').remove();
-});
-
 
 function modalClose() {
     $('body').removeClass('modal-open');
