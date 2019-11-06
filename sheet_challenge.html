@@ -1,80 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
   <title>遊戲資料 - 挑戰模式</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/sidebar.css">
   <link rel="stylesheet" href="./css/iframe.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+    crossorigin="anonymous"></script>
+  <!-- jQuery JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $(".sidebarDiv").load("./sidebar.html #sidebar");
+    });  
+  </script>
 </head>
 
 <body>
   <div class="wrapper">
-    <nav id="sidebar">
-      <div id="dismiss">
-        <i class="fas fa-arrow-left"></i>
-      </div>
-      <div class="sidebar-header">
-        <h3>Menu</h3>
-      </div>
-
-      <ul class="list-unstyled components">
-        <li>
-          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">技能資料</a>
-          <ul class="collapse list-unstyled" id="homeSubmenu">
-            <li>
-              <a target="_self" href="sheet_skill_common.html">一般技能</a>
-            </li>
-            <li>
-              <a target="_self" href="sheet_skill_monster.html">怪獸、墮落勇士技能</a>
-            </li>
-            <li>
-              <a target="_self" href="sheet_skill_hero.html">勇士技能</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a target="_self" href="sheet_event.html">活動列表</a>
-        </li>
-        <li>
-          <a target="_self" href="sheet_status.html">增減益表</a>
-        </li>
-        <li>
-          <a target="_self" href="sheet_corrupt.html">墮落效率表</a>
-        </li>
-        <li>
-          <a target="_self" href="sheet_blessing.html">女神祝福</a>
-        </li>
-        <li>
-          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">其他資料</a>
-          <ul class="collapse list-unstyled" id="pageSubmenu">
-            <li>
-              <a target="_self" href="sheet_challenge.html">挑戰模式資料</a>
-            </li>
-            <li>
-              <a target="_self" href="sheet_BOSS_info.html">BOSS資訊</a>
-            </li>
-            <li>
-              <a target="_self" href="sheet_book.html">書</a>
-            </li>
-            <li>
-              <a target="_self" href="sheet_darklord.html">魔王能力</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a target="_self" href="index.html">配置模擬器</a>
-        </li>
-      </ul>
-    </nav>
-    <div id="main-container" style="width: 100%; ">
+    <div class="sidebarDiv"></div>
+    <div id="main-container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin: 10px;">
         <div class="container-fluid">
           <button type="button" id="sidebarCollapse" class="btn btn-Menu">
@@ -84,26 +45,32 @@
         </div>
       </nav>
       <div class="card" style="margin: 10px; border-color: #611e03;">
-        <h4 class="card-header" style="border-color: #611e03; background-color: #8635154b;"><img class="" src="./img/other/ChallengeBattle.png" alt="">挑戰模式</h4>
+        <h4 class="card-header" style="border-color: #611e03; background-color: #8635154b;"><img class=""
+            src="./img/other/ChallengeBattle.png" alt="">挑戰模式</h4>
         <div class="card-body">
           <div class="card border-dark">
-            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQWfVLr_lditOZDw8baav8HMSL2nSP4SpXZFc8te3_uncbi2xSf-zy7-pRtP3H5xGrC3AO6oEWb3pl_/pubhtml/sheet?headers=false&gid=72349934" style="width: 100%; height: 400px;"></iframe>
+            <iframe
+              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQWfVLr_lditOZDw8baav8HMSL2nSP4SpXZFc8te3_uncbi2xSf-zy7-pRtP3H5xGrC3AO6oEWb3pl_/pubhtml/sheet?headers=false&gid=72349934"
+              style="width: 100%; height: 400px;"></iframe>
           </div>
         </div>
-        <div class="card-footer bg-transparent" style="border-color: #611e03;"><h4><a target="_blank" href="https://forum.gamer.com.tw/C.php?bsn=34366&snA=457">資料勘誤回報</a></h4></div>
+        <div class="card-footer bg-transparent" style="border-color: #611e03;">
+          <h4><a target="_blank" href="https://forum.gamer.com.tw/C.php?bsn=34366&snA=457">資料勘誤回報</a></h4>
+        </div>
       </div>
     </div>
   </div>
   <div class="overlay"></div>
-  
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="./js/sidebar.js"></script>
   <script src="./js/iframe.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
