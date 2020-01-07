@@ -14,9 +14,9 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
   <title> 配置模擬器 </title>
-
+  
   <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/sidebar.css">
@@ -37,6 +37,7 @@
   <script>
     $(function () {
       $(".sidebarDiv").load("./sidebar.html #sidebar");
+      $.getScript("./js/sidebar.js");
     });  
   </script>
 </head>
@@ -54,7 +55,7 @@
           </button>
         </div>
       </nav>
-      <div id="area-title" style="margin-bottom: 20px">
+      <div id="area-title" style="margin-bottom: 20px; width: 100%;">
         <h2> DungeonMaker 配置模擬器 v3.1
           <button id="btn-camera" class="btn btn-outline-primary"><i class="fas fa-camera"></i></button>
         </h2>

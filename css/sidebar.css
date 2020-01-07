@@ -27,7 +27,7 @@ a, a:hover, a:focus {
     display: block;
 }
 
-#sidebar {
+.sidebarDiv {
     /* don't forget to add all the previously mentioned styles here too */
     width: 250px;
     position: fixed;
@@ -42,7 +42,7 @@ a, a:hover, a:focus {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-#sidebar.active {
+.sidebarDiv.active {
     left: 0px;
 }
 
