@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <title>遊戲資料 - 關鍵字獲取表</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/sidebar.css">
+  <link rel="stylesheet" href="./css/iframe.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+    crossorigin="anonymous"></script>
+  <!-- jQuery JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $(".sidebarDiv").load("./sidebar.html #sidebar");
+      $.getScript("./js/sidebar.js");
+    });  
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebarDiv"></div>
+    <div id="main-container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin: 10px;">
+        <div class="container-fluid">
+          <button type="button" id="sidebarCollapse" class="btn btn-Menu">
+            <i class="fas fa-align-left"></i>
+            <span>選單</span>
+          </button>
+        </div>
+      </nav>
+      <div class="card" style="margin: 10px; border-color: #611e03;">
+        <h4 class="card-header" style="border-color: #611e03; background-color: #8635154b;"><img src="./img/other/elf.jpg">關鍵字獲取表</h4>
+        <div class="card-body">
+          <div class="card border-dark">
+            <iframe
+              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQWfVLr_lditOZDw8baav8HMSL2nSP4SpXZFc8te3_uncbi2xSf-zy7-pRtP3H5xGrC3AO6oEWb3pl_/pubhtml/sheet?headers=false&gid=962904483"
+              style="width: 100%; height: 720px;"></iframe>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent" style="border-color: #611e03;">
+          <h4><a target="_blank" href="https://forum.gamer.com.tw/C.php?bsn=34366&snA=457">資料勘誤回報</a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="./js/sidebar.js"></script>
+  <script src="./js/iframe.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
